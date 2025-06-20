@@ -1,0 +1,45 @@
+{
+  "name": "RunnerGo UI Pro",
+  "version": "0.14.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon-34.png",
+    "32": "icon-34.png",
+    "48": "icon-34.png",
+    "128": "icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon-34.png",
+      "32": "icon-34.png"
+    },
+    "default_title": "Record",
+    "default_popup": "index.html"
+  },
+  "commands": {
+    "record": {
+      "suggested_key": {
+        "default": "Alt+Shift+R"
+      },
+      "description": "Start recording"
+    },
+    "inspect": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Start inspecting"
+    }
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "options_ui": {
+    "page": "preferences.html",
+    "open_in_tab": false
+  },
+  "permissions": ["debugger", "tabs", "contextMenus", "storage", "sidePanel"]
+}

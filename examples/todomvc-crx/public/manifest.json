@@ -1,0 +1,13 @@
+{
+  "name": "RunnerGo UI Pro - TodoMVC",
+  "version": "0.13.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "RunnerGo UI Pro - TodoMVC"
+  },
+  "permissions": ["debugger", "tabs"]
+}

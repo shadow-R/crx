@@ -1,0 +1,10 @@
+{
+  "name": "RunnerGo UI Pro Tests",
+  "version": "0.13.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["debugger", "tabs"]
+}
